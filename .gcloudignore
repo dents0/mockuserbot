@@ -1,0 +1,7 @@
+.gcloudignore
+
+.git
+.gitignore
+
+# Ignored by the build system
+/setup.cfg

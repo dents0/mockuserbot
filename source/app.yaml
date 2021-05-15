@@ -1,0 +1,5 @@
+runtime: python38
+service: mockuserbot
+env_variables:
+  PROJECT_ID: "tsokarev-gcp-test"
+  GAE_URL: "https://mockuserbot-dot-tsokarev-gcp-test.appspot.com/"

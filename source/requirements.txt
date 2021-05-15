@@ -1,0 +1,4 @@
+pyTelegramBotAPI==3.7.8
+randomuser==1.6
+Flask==1.1.2
+google-cloud-secret-manager==2.4.0
