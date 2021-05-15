@@ -2,6 +2,12 @@ from mockuserbot import app, bot, BOT_TOKEN
 from randomuser import RandomUser
 
 
+@bot.message_handler(commands=['start'])
+def handle_command(message):
+    """ Sends welcome-message on start """
+    bot.send_message(message.chat.id, "Greetings! Please see the list of commands to generate the data you need.")
+
+
 @bot.message_handler(commands=['user'])
 def handle_command(message):
     """ Generate full user profile """
@@ -55,3 +61,4 @@ def handle_command(message):
 def handle_command(message):
     """ Link to the bot """
     bot.send_message(message.chat.id, "https://t.me/mockuserbot")
+    
