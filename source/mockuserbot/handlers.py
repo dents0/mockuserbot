@@ -14,8 +14,8 @@ def handle_command(message):
     user = RandomUser()
     bot.send_photo(message.chat.id, user.get_picture())
     bot.send_message(message.chat.id, f"""
-<b>Full Name:</b> <i>{user.get_full_name()}</i>
-<b>DoB:</b> <i>{user.get_dob()[:10]}</i>
+<b>Full Name:</b> {user.get_full_name()}
+<b>DoB:</b> {user.get_dob()[:10]}
 <b>Address:</b>
   <i>{user.get_street()},
   {user.get_city()}
@@ -61,4 +61,3 @@ def handle_command(message):
 def handle_command(message):
     """ Link to the bot """
     bot.send_message(message.chat.id, "https://t.me/mockuserbot")
-    
